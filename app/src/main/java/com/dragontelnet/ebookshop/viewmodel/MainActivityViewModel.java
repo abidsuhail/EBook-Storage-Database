@@ -8,7 +8,7 @@ import androidx.lifecycle.LiveData;
 
 import com.dragontelnet.ebookshop.models.Book;
 import com.dragontelnet.ebookshop.models.Category;
-import com.dragontelnet.ebookshop.models.EBookShopRepository;
+import com.dragontelnet.ebookshop.EBookShopRepository;
 
 import java.util.List;
 

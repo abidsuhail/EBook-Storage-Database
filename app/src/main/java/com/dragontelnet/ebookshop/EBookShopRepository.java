@@ -1,4 +1,4 @@
-package com.dragontelnet.ebookshop.models;
+package com.dragontelnet.ebookshop;
 
 import android.app.Application;
 
@@ -7,6 +7,8 @@ import androidx.lifecycle.LiveData;
 import com.dragontelnet.ebookshop.BooksDatabase;
 import com.dragontelnet.ebookshop.DAO.BookDAO;
 import com.dragontelnet.ebookshop.DAO.CategoryDAO;
+import com.dragontelnet.ebookshop.models.Book;
+import com.dragontelnet.ebookshop.models.Category;
 
 import java.util.List;
 import java.util.concurrent.Executor;
