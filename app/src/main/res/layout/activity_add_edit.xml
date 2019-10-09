@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable
+            name="book"
+            type="com.dragontelnet.ebookshop.models.Book" />
+        <variable
+            name="clickHandler"
+            type="com.dragontelnet.ebookshop.ui.AddEditActivity.AddEditClickHandler" />
+    </data>
+
+<LinearLayout
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.AddEditActivity"
+    android:padding="15dp">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@={book.bookName}"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:hint="BOOK NAME"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@={book.unitPrice}"
+        android:layout_marginBottom="8dp"
+
+        android:hint="BOOK PRICE"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="@{clickHandler::onSubmitClick}"
+        android:text="SUBMIT"/>
+</LinearLayout>
+</layout>
